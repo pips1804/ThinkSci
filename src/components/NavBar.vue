@@ -23,7 +23,7 @@
         </div>
 
         <!-- Navigation Links -->
-        <div class="hidden md:flex items-center space-x-12">
+        <div class="hidden md:flex items-center space-x-16">
           <a
             v-for="link in navigationLinks"
             :key="link.href"

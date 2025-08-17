@@ -114,7 +114,7 @@
                 {{ stat.value }}
               </div>
               <div
-                class="text-xs sm:text-sm lg:text-base text-gray-600 dark:text-gray-400 font-medium"
+                class="text-xs sm:text-sm lg:text-base text-green-800 dark:text-gray-400 font-medium"
               >
                 {{ stat.label }}
               </div>
@@ -222,9 +222,9 @@ const generateFloatingParticles = () => {
 const floatingParticles = generateFloatingParticles();
 
 const stats = [
-  { value: "50+", label: "Interactive Lessons" },
-  { value: "1000+", label: "Happy Students" },
-  { value: "95%", label: "Success Rate" },
+  { value: "14", label: "Video Lessons" },
+  { value: "100+", label: "Downloads" },
+  { value: "70%", label: "Development Progress" },
 ];
 
 const scienceIcons = [
