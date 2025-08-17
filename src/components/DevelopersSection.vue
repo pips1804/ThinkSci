@@ -40,10 +40,13 @@
 
           <div class="relative z-10">
             <div
-              class="w-28 h-28 rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-700"
-              :class="member.avatarBg"
+              class="w-28 h-28 rounded-full overflow-hidden flex items-center justify-center mx-auto mb-6 shadow-xl group-hover:scale-110 transition-all duration-700"
             >
-              <User class="w-14 h-14 text-white" />
+              <img
+                :src="member.image"
+                :alt="member.name"
+                class="w-full h-full object-cover"
+              />
             </div>
 
             <h3
@@ -63,9 +66,12 @@
             </p>
 
             <div class="flex justify-center space-x-4">
-              <button
+              <a
                 v-for="social in member.socials"
                 :key="social.name"
+                :href="social.url"
+                target="_blank"
+                rel="noopener noreferrer"
                 class="p-3 bg-gray-100 dark:bg-gray-700 rounded-xl hover:bg-[#FFCC1D] hover:scale-110 hover:-translate-y-1 transition-all duration-500 shadow-md hover:shadow-lg"
                 :aria-label="social.name"
               >
@@ -73,7 +79,7 @@
                   :is="social.icon"
                   class="w-5 h-5 text-[#116530] dark:text-gray-300 hover:text-white transition-colors duration-500"
                 />
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -104,8 +110,11 @@
               Download ThinkSci today and start your exciting journey into the
               world of science!
             </p>
-            <button
-              class="group bg-[#116530] hover:bg-green-600 text-white px-12 py-5 rounded-2xl font-bold text-xl transition-all duration-600 transform hover:scale-110 hover:-translate-y-2 shadow-2xl hover:shadow-3xl relative overflow-hidden"
+            <a
+              href="https://drive.google.com/file/d/18lAQY7O2ZMkKx_hhkQVzs2sC088GMciq/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group bg-[#116530] hover:bg-green-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-2xl font-semibold text-base sm:text-lg flex items-center justify-center space-x-2 sm:space-x-3 transition-all duration-600 ease-out transform hover:scale-105 hover:-translate-y-1 shadow-2xl hover:shadow-3xl"
             >
               <span
                 class="relative z-10 flex items-center justify-center space-x-3"
@@ -115,7 +124,7 @@
                   class="w-6 h-6 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-500"
                 />
               </span>
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -140,10 +149,19 @@ const teamMembers = [
     name: "Manlapaz, Jhon Paul G.",
     role: "UI/UX Designer",
     description: "Designs user-friendly and engaging interfaces for learners.",
-    avatarBg: "bg-gradient-to-br from-[#FFCC1D] to-[#116530]",
+    image: "/manlapaz.jpg",
     socials: [
-      { name: "Email", icon: Mail },
-      { name: "Github", icon: Github },
+      {
+        name: "Email",
+        icon: Mail,
+        url: "https://mail.google.com/mail/?view=cm&fs=1&to=jhonpaulmanlapaz1804@gmail.com",
+      },
+      { name: "Github", icon: Github, url: "https://github.com/pips1804" },
+      {
+        name: "Facebook",
+        icon: FacebookIcon,
+        url: "https://www.facebook.com/jhonpaulgm/",
+      },
     ],
   },
   {
@@ -151,30 +169,54 @@ const teamMembers = [
     role: "Lead Programmer",
     description:
       "Develops and manages the app’s core features and performance.",
-    avatarBg: "bg-gradient-to-br from-[#116530] to-[#FFCC1D]",
+    image: "/ibanez.jpg",
     socials: [
-      { name: "Email", icon: Mail },
-      { name: "GitHub", icon: Github },
+      {
+        name: "Email",
+        icon: Mail,
+        url: "https://mail.google.com/mail/?view=cm&fs=1&to=ibanezwilfredo16@gmail.com",
+      },
+      {
+        name: "Facebook",
+        icon: FacebookIcon,
+        url: "https://www.facebook.com/ibanezred15",
+      },
     ],
   },
   {
     name: "Reyes, Oj G.",
     role: "Data Analyst",
     description: "Analyzes and interprets data to guide project decisions.",
-    avatarBg: "bg-gradient-to-br from-[#FFCC1D] via-[#E8E8CC] to-[#116530]",
+    image: "/reyes.jpg",
     socials: [
-      { name: "Email", icon: Mail },
-      { name: "Facebook", icon: FacebookIcon },
+      {
+        name: "Email",
+        icon: Mail,
+        url: "https://mail.google.com/mail/?view=cm&fs=1&to=ojreyesgregorio@gmail.com",
+      },
+      {
+        name: "Facebook",
+        icon: FacebookIcon,
+        url: "http://facebook.com/skipmakiw",
+      },
     ],
   },
   {
     name: "Banawan, Isaac Darry F.",
     role: "Document Specialist",
     description: "Organizes and prepares clear project documentation.",
-    avatarBg: "bg-gradient-to-br from-[#FFCC1D] via-[#E8E8CC] to-[#116530]",
+    image: "/banawan.jpg",
     socials: [
-      { name: "Email", icon: Mail },
-      { name: "Facebook", icon: FacebookIcon },
+      {
+        name: "Email",
+        icon: Mail,
+        url: "https://mail.google.com/mail/?view=cm&fs=1&to=isaacbanawan10@gmail.com",
+      },
+      {
+        name: "Facebook",
+        icon: FacebookIcon,
+        url: "http://facebook.com/darryxc",
+      },
     ],
   },
 ];

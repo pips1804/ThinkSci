@@ -77,7 +77,11 @@
           <div
             class="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start animate-fade-in-up animation-delay-800"
           >
-            <button
+            <!-- Download for Android -->
+            <a
+              href="https://drive.google.com/file/d/18lAQY7O2ZMkKx_hhkQVzs2sC088GMciq/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               class="group bg-[#116530] hover:bg-green-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-2xl font-semibold text-base sm:text-lg flex items-center justify-center space-x-2 sm:space-x-3 transition-all duration-600 ease-out transform hover:scale-105 hover:-translate-y-1 shadow-2xl hover:shadow-3xl"
             >
               <Smartphone
@@ -87,16 +91,20 @@
               <ArrowRight
                 class="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-600 ease-out"
               />
-            </button>
+            </a>
 
-            <button
+            <!-- Watch Demo -->
+            <a
+              href="https://drive.google.com/file/d/18lAQY7O2ZMkKx_hhkQVzs2sC088GMciq/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               class="group bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm text-[#116530] dark:text-yellow-400 border-2 border-[#116530] dark:border-yellow-400 px-6 sm:px-8 py-3 sm:py-4 rounded-2xl font-semibold text-base sm:text-lg flex items-center justify-center space-x-2 sm:space-x-3 transition-all duration-600 ease-out transform hover:scale-105 hover:-translate-y-1 shadow-2xl hover:shadow-3xl hover:bg-white dark:hover:bg-gray-800"
             >
               <Play
                 class="w-5 h-5 sm:w-6 sm:h-6 group-hover:scale-110 transition-transform duration-600 ease-out"
               />
               <span>Watch Demo</span>
-            </button>
+            </a>
           </div>
 
           <!-- Stats -->
