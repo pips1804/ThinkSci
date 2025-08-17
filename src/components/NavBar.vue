@@ -102,16 +102,18 @@
           v-if="showMobileMenu"
           class="md:hidden absolute top-full left-0 right-0 bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl border-b border-gray-200 dark:border-gray-700 shadow-2xl"
         >
-          <div class="px-4 py-6 space-y-4">
+          <div class="px-4 py-6 divide-y divide-gray-200 dark:divide-gray-700">
             <a
-              v-for="(link, index) in navigationLinks"
+              v-for="link in navigationLinks"
               :key="link.href"
               :href="link.href"
               @click="$emit('close-mobile-menu')"
-              class="block px-6 py-4 text-lg font-medium text-gray-700 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-400 hover:bg-gradient-to-r hover:from-yellow-50 hover:to-green-50 dark:hover:from-gray-800 dark:hover:to-gray-700 rounded-xl transition-all duration-500 transform hover:scale-102 hover:shadow-lg"
-              :style="{ animationDelay: `${index * 50}ms` }"
+              class="block px-6 py-4 text-lg font-medium text-gray-700 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-400 transition-all duration-300 relative"
             >
               {{ link.text }}
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-400 to-green-500 transition-all duration-500 group-hover:w-full"
+              ></span>
             </a>
           </div>
         </div>

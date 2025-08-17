@@ -2,10 +2,10 @@
 export default {
   darkMode: "class",
   content: [
-    "app/**/*.{ts,tsx}",
-    "components/**/*.{ts,tsx}",
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
+    "app/**/*.{ts,tsx}",
+    "components/**/*.{ts,tsx}",
     "*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -55,6 +55,11 @@ export default {
       },
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
+      },
+      // 👇 Add custom animations here
+      animation: {
+        "spin-slow": "spin 8s linear infinite",
+        "spin-slower": "spin 20s linear infinite",
       },
     },
   },

@@ -34,23 +34,28 @@ import AboutSection from "./components/AboutSection.vue";
 import DevelopersSection from "./components/DevelopersSection.vue";
 import FooterSection from "./components/FooterSection.vue";
 
-// Reactive state
 const isDark = ref(false);
 const showMobileMenu = ref(false);
 
-// Methods
 const toggleTheme = () => {
   isDark.value = !isDark.value;
   localStorage.setItem("theme", isDark.value ? "dark" : "light");
 
   if (isDark.value) {
-    document.documentElement.classList.add("dark"); // html tag
+    document.documentElement.classList.add("dark");
   } else {
     document.documentElement.classList.remove("dark");
   }
 };
 
-// Lifecycle
+const toggleMobileMenu = () => {
+  showMobileMenu.value = !showMobileMenu.value;
+};
+
+const closeMobileMenu = () => {
+  showMobileMenu.value = false;
+};
+
 onMounted(() => {
   const savedTheme = localStorage.getItem("theme");
   if (savedTheme) {
@@ -59,7 +64,6 @@ onMounted(() => {
     isDark.value = window.matchMedia("(prefers-color-scheme: dark)").matches;
   }
 
-  // Apply it immediately
   if (isDark.value) {
     document.documentElement.classList.add("dark");
   }
