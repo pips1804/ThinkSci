@@ -10,8 +10,8 @@
         >
           Meet Our
           <span class="relative inline-block">
-            <span class="relative z-10 text-[#116530] dark:text-white"
-              >Amazing Team</span
+            <span class="relative z-10 text-[#116530] dark:text-white">
+              Team</span
             >
             <span
               class="absolute inset-0 bg-gradient-to-r from-yellow-400/30 to-green-400/30 rounded-lg blur-lg transform scale-110"
@@ -21,8 +21,8 @@
         <p
           class="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed"
         >
-          Passionate educators and developers working together to revolutionize
-          science education for the next generation.
+          Passionate proponents working together to develop the e-learning
+          application.
         </p>
       </div>
 
