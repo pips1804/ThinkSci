@@ -30,9 +30,9 @@
             <span class="text-3xl font-bold text-[#FFCC1D]">ThinkSci</span>
           </div>
           <p class="text-gray-300 mb-8 max-w-md text-lg leading-relaxed">
-            Making science education fun, interactive, and accessible for Grade
-            7 students worldwide. Join thousands of young scientists on their
-            learning journey!
+            Turn physics into play! Explore Force, Motion & Energy through our
+            gamified Android app with video lessons, collectible badges, and a
+            virtual pet companion - all available offline.
           </p>
           <!-- <div class="flex space-x-4">
             <button

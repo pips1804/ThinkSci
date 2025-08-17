@@ -36,8 +36,9 @@
         <p
           class="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed"
         >
-          We make science learning fun, interactive, and engaging for Grade 7
-          students with cutting-edge technology and proven educational methods.
+          Master Force, Motion & Energy concepts through our offline Android app
+          designed specifically for Grade 7 students, featuring engaging video
+          lessons and gamified learning experiences.
         </p>
       </div>
 
@@ -115,62 +116,57 @@
 </template>
 
 <script setup>
-import {
-  BookOpen,
-  Target,
-  Trophy,
-  Users,
-  BarChart,
-  Shield,
-} from "lucide-vue-next";
+import { Smartphone, Play, Award, Heart, WifiOff, Zap } from "lucide-vue-next";
 
-// Enhanced features with morphing effects
+// Updated features aligned with capstone project
 const features = [
   {
-    icon: BookOpen,
+    icon: WifiOff,
     iconBg: "bg-gradient-to-br from-[#FFCC1D] to-yellow-400",
     iconColor: "text-[#116530]",
-    title: "Interactive Science Lessons",
+    title: "Offline Learning",
     description:
-      "Learn science through animations, simulations, and experiments.",
+      "Study anytime, anywhere without internet connection. Perfect for uninterrupted learning sessions.",
   },
   {
-    icon: Target,
+    icon: Zap,
     iconBg: "bg-gradient-to-br from-[#116530] to-green-600",
     iconColor: "text-[#FFCC1D]",
-    title: "Adaptive Learning Paths",
+    title: "Force, Motion & Energy",
     description:
-      "Content adjusts to each student’s pace for better understanding.",
+      "Comprehensive Grade 7 physics concepts taught through interactive lessons and real-world examples.",
   },
   {
-    icon: Trophy,
+    icon: Play,
     iconBg: "bg-gradient-to-br from-[#FFCC1D] to-yellow-400",
     iconColor: "text-[#116530]",
-    title: "Gamified Challenges",
+    title: "Video Lessons",
     description:
-      "Earn badges and rewards that make learning fun and motivating.",
+      "High-quality educational videos that explain complex physics concepts in an easy-to-understand way.",
   },
   {
-    icon: Users,
+    icon: Award,
     iconBg: "bg-gradient-to-br from-[#116530] to-green-600",
     iconColor: "text-[#FFCC1D]",
-    title: "Peer Collaboration",
-    description: "Work with classmates on group tasks and shared discoveries.",
+    title: "Achievement Badges",
+    description:
+      "Earn badges and rewards as you progress through lessons and complete challenging activities.",
   },
   {
-    icon: BarChart,
+    icon: Heart,
     iconBg: "bg-gradient-to-br from-[#FFCC1D] to-yellow-400",
     iconColor: "text-[#116530]",
-    title: "Progress Monitoring",
-    description: "Track learning milestones with clear reports and feedback.",
+    title: "Virtual Pet Companion",
+    description:
+      "Care for your virtual pet while learning! Your pet grows and evolves based on your study progress.",
   },
   {
-    icon: Shield,
+    icon: Smartphone,
     iconBg: "bg-gradient-to-br from-[#116530] to-green-600",
     iconColor: "text-[#FFCC1D]",
-    title: "Safe & Child-Friendly",
+    title: "Mobile-First Design",
     description:
-      "Secure platform with privacy protection and parental controls.",
+      "Optimized Android app experience with intuitive navigation designed specifically for mobile learning.",
   },
 ];
 </script>

@@ -35,7 +35,7 @@
     </div>
 
     <div class="max-w-7xl mx-auto relative z-10 w-full">
-      <div class="grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
+      <div class="grid lg:grid-cols-2 gap-8 lg:gap-20 xl:gap-24 items-center">
         <!-- Hero Content -->
         <div
           class="text-center lg:text-left space-y-4 sm:space-y-6 lg:space-y-8 order-2 lg:order-1"
@@ -47,17 +47,17 @@
               <span
                 class="block text-[#116530] dark:text-yellow-400 mb-1 sm:mb-2 animate-fade-in-up"
               >
-                Discover Science
+                Learn Science
               </span>
-              <span
+              <!-- <span
                 class="block text-[#116530] dark:text-yellow-400 mb-1 sm:mb-2 animate-fade-in-up animation-delay-200"
               >
                 with
-              </span>
+              </span> -->
               <span
                 class="block text-[#116530] dark:text-white animate-fade-in-up animation-delay-400 relative"
               >
-                <span class="relative z-10">ThinkSci!</span>
+                <span class="relative z-10"> with ThinkSci!</span>
                 <span
                   class="absolute inset-0 bg-gradient-to-r from-yellow-400/20 to-green-400/20 rounded-lg blur-xl transform scale-110"
                 ></span>
@@ -67,9 +67,9 @@
             <p
               class="text-lg sm:text-xl lg:text-2xl text-gray-700 dark:text-gray-300 leading-relaxed max-w-2xl mx-auto lg:mx-0 animate-fade-in-up animation-delay-600"
             >
-              The ultimate science learning adventure for Grade 7 students!
-              Explore, experiment, and excel with interactive lessons, fun
-              quizzes, and amazing discoveries.
+              Unlock the secrets of Force, Motion & Energy! Progress through
+              video lessons, earn badges, and nurture your virtual pet in this
+              offline Grade 7 physics adventure.
             </p>
           </div>
 

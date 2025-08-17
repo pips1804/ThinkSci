@@ -9,21 +9,37 @@
           <div
             class="w-10 h-10 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-500"
           >
-            <Atom class="w-6 h-6 text-green-800 animate-spin-slow" />
+            <Atom
+              class="w-6 h-6 animate-spin-slow transition-colors duration-300"
+              :style="{ color: isDark ? '#facc15' : '#166534' }"
+            />
           </div>
-          <span class="text-2xl font-bold text-green-800 dark:text-yellow-400"
-            >ThinkSci</span
+          <span
+            class="text-2xl font-bold text-green-800 dark:text-yellow-400"
+            :style="{ color: isDark ? '#facc15' : '#166534' }"
           >
+            ThinkSci
+          </span>
         </div>
 
         <!-- Navigation Links -->
-        <div class="hidden md:flex items-center space-x-8">
+        <div class="hidden md:flex items-center space-x-12">
           <a
             v-for="link in navigationLinks"
             :key="link.href"
             :href="link.href"
             @click="smoothScroll"
-            class="relative font-medium group text-gray-700 dark:text-gray-300 transition-colors duration-300 hover:text-green-600 dark:hover:text-yellow-400"
+            class="relative font-medium group transition-colors duration-300 nav-link"
+            :style="{
+              color: isDark ? '#d1d5db' : '#374151',
+              '--hover-color': isDark ? '#facc15' : '#059669',
+            }"
+            @mouseenter="
+              $event.target.style.color = isDark ? '#facc15' : '#059669'
+            "
+            @mouseleave="
+              $event.target.style.color = isDark ? '#d1d5db' : '#374151'
+            "
           >
             {{ link.text }}
             <span

@@ -35,21 +35,19 @@ import DevelopersSection from "./components/DevelopersSection.vue";
 import FooterSection from "./components/FooterSection.vue";
 
 // Reactive state
-const isDark = ref(true);
+const isDark = ref(false);
 const showMobileMenu = ref(false);
 
 // Methods
 const toggleTheme = () => {
   isDark.value = !isDark.value;
   localStorage.setItem("theme", isDark.value ? "dark" : "light");
-};
 
-const toggleMobileMenu = () => {
-  showMobileMenu.value = !showMobileMenu.value;
-};
-
-const closeMobileMenu = () => {
-  showMobileMenu.value = false;
+  if (isDark.value) {
+    document.documentElement.classList.add("dark"); // html tag
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
 };
 
 // Lifecycle
@@ -59,6 +57,11 @@ onMounted(() => {
     isDark.value = savedTheme === "dark";
   } else {
     isDark.value = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+
+  // Apply it immediately
+  if (isDark.value) {
+    document.documentElement.classList.add("dark");
   }
 });
 </script>
