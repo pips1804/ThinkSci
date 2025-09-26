@@ -79,7 +79,7 @@
           >
             <!-- Download for Android -->
             <a
-              href="https://drive.google.com/file/d/1GLJJ1HCeRS4o5pXl4NBP8JrFJa0KEJqR/view?usp=sharing"
+              href="https://drive.google.com/file/d/1U4maWWbQCsZOQz7zcxuIGK_SjpXO06NC/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               class="group bg-[#116530] hover:bg-green-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-2xl font-semibold text-base sm:text-lg flex items-center justify-center space-x-2 sm:space-x-3 transition-all duration-600 ease-out transform hover:scale-105 hover:-translate-y-1 shadow-2xl hover:shadow-3xl"
@@ -95,7 +95,7 @@
 
             <!-- Watch Demo -->
             <a
-              href="https://drive.google.com/file/d/1PZCrHyrgB3op89qu1js39El217GipzAy/view?usp=sharing"
+              href="https://drive.google.com/file/d/1U4maWWbQCsZOQz7zcxuIGK_SjpXO06NC/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               class="group bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm text-[#116530] dark:text-yellow-400 border-2 border-[#116530] dark:border-yellow-400 px-6 sm:px-8 py-3 sm:py-4 rounded-2xl font-semibold text-base sm:text-lg flex items-center justify-center space-x-2 sm:space-x-3 transition-all duration-600 ease-out transform hover:scale-105 hover:-translate-y-1 shadow-2xl hover:shadow-3xl hover:bg-white dark:hover:bg-gray-800"
