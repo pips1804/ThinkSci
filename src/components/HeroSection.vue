@@ -230,9 +230,9 @@ const generateFloatingParticles = () => {
 const floatingParticles = generateFloatingParticles();
 
 const stats = [
+  { value: "4", label: "Categories" },
   { value: "14", label: "Video Lessons" },
-  { value: "100+", label: "Downloads" },
-  { value: "70%", label: "Development Progress" },
+  { value: "14", label: "Interactive Quizzes" },
 ];
 
 const scienceIcons = [

@@ -57,16 +57,28 @@ html {
   background: #f59e0b;
 }
 
-/* Spin-slow animation */
-@keyframes spin-slow {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (prefers-reduced-motion: reduce) {
+  .force-animate {
+    animation: spin-slow 20s linear infinite !important;
+    transition: all 0.5s ease-in-out !important;
   }
 }
 
 .animate-spin-slow {
   animation: spin-slow 20s linear infinite;
+}
+
+/* ✅ This overrides prefers-reduced-motion and forces animations to run */
+@layer utilities {
+  .force-animate {
+    animation-play-state: running !important;
+    animation: inherit !important; /* keep original animation */
+  }
+
+  /* Ensure animations are not disabled by system preferences */
+  @media (prefers-reduced-motion: reduce) {
+    .force-animate {
+      animation: inherit !important;
+    }
+  }
 }

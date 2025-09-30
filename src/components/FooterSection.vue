@@ -61,20 +61,18 @@
           </ul>
         </div>
 
-        <!-- Contact -->
+        <!-- Project Adviser -->
         <div>
-          <h4 class="text-[#FFCC1D] font-bold text-xl mb-6">Contact Us</h4>
+          <h4 class="text-[#FFCC1D] font-bold text-xl mb-6">Project Adviser</h4>
           <ul class="space-y-4">
-            <li
-              v-for="contact in contactInfo"
-              :key="contact.type"
-              class="flex items-center space-x-3 group"
-            >
-              <component
-                :is="contact.icon"
-                class="w-5 h-5 text-[#FFCC1D] group-hover:scale-110 transition-transform duration-500"
-              />
-              <span class="text-gray-300 text-lg">{{ contact.value }}</span>
+            <li class="flex flex-col">
+              <span class="text-gray-300 text-lg font-semibold"
+                >Florante Pangilinan</span
+              >
+              <p class="text-gray-400 text-base leading-relaxed">
+                Our dedicated adviser who guided and supported us throughout the
+                development of this project.
+              </p>
             </li>
           </ul>
         </div>

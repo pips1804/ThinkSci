@@ -149,7 +149,7 @@ const teamMembers = [
     name: "Manlapaz, Jhon Paul G.",
     role: "UI/UX Designer",
     description: "Designs user-friendly and engaging interfaces for learners.",
-    image: "/manlapaz.jpg",
+    image: "/manlapaz.png",
     socials: [
       {
         name: "Email",
@@ -169,7 +169,7 @@ const teamMembers = [
     role: "Lead Programmer",
     description:
       "Develops and manages the app’s core features and performance.",
-    image: "/ibanez.jpg",
+    image: "/ibanez.png",
     socials: [
       {
         name: "Email",
@@ -187,7 +187,7 @@ const teamMembers = [
     name: "Reyes, Oj G.",
     role: "Data Analyst",
     description: "Analyzes and interprets data to guide project decisions.",
-    image: "/reyes.jpg",
+    image: "/reyes.png",
     socials: [
       {
         name: "Email",
@@ -205,7 +205,7 @@ const teamMembers = [
     name: "Banawan, Isaac Darry F.",
     role: "Document Specialist",
     description: "Organizes and prepares clear project documentation.",
-    image: "/banawan.jpg",
+    image: "/banawan.png",
     socials: [
       {
         name: "Email",
