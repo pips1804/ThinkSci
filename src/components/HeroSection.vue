@@ -1,7 +1,7 @@
 <template>
   <section
     id="hero"
-    class="relative bg-gradient-to-br from-[#E8E8CC] via-[#FFCC1D] to-[#E8E8CC] dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 min-h-screen flex items-center px-4 py-12 sm:py-20 lg:py-24 overflow-hidden"
+    class="relative bg-gradient-to-br from-[#E8E8CC] via-[#FFCC1D] to-[#E8E8CC] dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 min-h-screen flex items-center px-4 py-8 sm:py-20 lg:py-24 overflow-hidden"
   >
     <!-- Enhanced Background Elements with Floating Particles -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
@@ -132,10 +132,11 @@
 
         <!-- Hero Visual -->
         <div
-          class="relative animate-fade-in-right animation-delay-400 order-1 lg:order-2 mb-8 lg:mb-0"
+          class="relative animate-fade-in-right animation-delay-400 order-1 lg:order-2 mb-4 sm:mb-6 lg:mb-0"
         >
-          <!-- Container with max width and centered alignment for smaller screens -->
-          <div class="max-w-sm sm:max-w-md lg:max-w-none mx-auto">
+          <div
+            class="max-w-[160px] sm:max-w-[220px] md:max-w-md lg:max-w-none mx-auto transition-all duration-300"
+          >
             <div
               class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl rounded-3xl p-4 sm:p-6 lg:p-8 shadow-2xl transform rotate-1 sm:rotate-2 lg:rotate-3 hover:rotate-0 transition-all duration-800 ease-out hover:scale-105 border border-white/20 dark:border-gray-700/20"
             >
